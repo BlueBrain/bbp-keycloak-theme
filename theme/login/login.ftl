@@ -17,6 +17,13 @@
                     v.src = "${url.resourcesPath}/img/eye-off.png";
                 }
             }
+            function autofocusUsername() {
+                // this sets the autofocus on the username, if the autofocus is set on the html and not
+                // when the page is loaded, there is a weird behaviour with the autocomplete
+                document.getElementById("username").focus();
+            }
+
+            window.onload = autofocusUsername
         </script>
     <#elseif section = "form">
         <div>
@@ -29,7 +36,7 @@
         <#if realm.password>
             <div>
                <form id="kc-form-login" class="form" onsubmit="return true;" action="${url.loginAction}" method="post">
-                    <input id="username" class="login-field" placeholder="${msg("username")}" type="text" name="username" tabindex="1" autofocus>
+                    <input id="username" class="login-field" placeholder="${msg("username")}" type="text" name="username" tabindex="1">
                     <div>
                         <label class="visibility" id="v" onclick="togglePassword()"><img id="vi" src="${url.resourcesPath}/img/eye-off.png"></label>
                     </div>
