@@ -11,8 +11,8 @@
 <g id="Background" transform="translate(27.25 68)">
 	
 		<linearGradient id="BKG_1_" gradientUnits="userSpaceOnUse" x1="4831.3574" y1="596.5286" x2="4832.4111" y2="595.3749" gradientTransform="matrix(1965 0 0 -1081 -9493349 644944)">
-		<stop  offset="0" style="stop-color:#3F19AA"/>
-		<stop  offset="1" style="stop-color:#00D4FE"/>
+      		<stop  offset="0" stop-color="#050A56"/>
+      		<stop  offset="1" stop-color="#00d4fe"/> 
 	</linearGradient>
 	<rect id="BKG" x="-27.2" y="-68" class="st0" width="2083.1" height="1228"/>
 	<g id="Groupe_119" transform="translate(0 -140)">
